@@ -14,7 +14,7 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle, togglePostOpen }) => {
   };
   return (
     <div className={`fixed inset-0 z-40 transition-transform transform ${mobileOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0 bg-black text-white w-1/2 lg:w-auto -mr-52 border-r border-gray-500 lg:border-none`}>
-      <div className="py-4">
+      <div className="py-4 overflow-y-auto h-screen">
         <button onClick={handleDrawerToggle} className="lg:hidden mb-4">
           Close
         </button>
